@@ -1,0 +1,31 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4
+    },
+    "javascript": {
+        "globals": ["Bun"],
+        "parser": {
+            "unsafeParameterDecoratorsEnabled": true
+        }
+    },
+    "linter": {
+        "rules": {
+            "all": true,
+            "correctness": {
+                "noNodejsModules": "off"
+            },
+            "nursery": {
+                "useSortedClasses": "error"
+            },
+            "suspicious": {
+                "noReactSpecificProps": "off"
+            }
+        }
+    },
+    "vcs": {
+        "clientKind": "git",
+        "enabled": true
+    }
+}

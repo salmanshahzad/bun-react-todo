@@ -1,0 +1,8 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "experimentalDecorators": true
+    },
+    "exclude": ["dist"],
+    "extends": ["@tsconfig/bun", "@tsconfig/strictest"]
+}

@@ -1,0 +1,15 @@
+services:
+    web:
+        build: .
+        environment:
+            COOKIE_SECRET: "${COOKIE_SECRET}"
+            DATABASE_URL: "${DATABASE_URL}"
+            MIGRATIONS_DIR: "/usr/src/app/drizzle"
+            NODE_ENV: "${NODE_ENV}"
+            PORT: "${PORT}"
+            REDIS_URL: "${REDIS_URL}"
+            VITE_ORIGIN: "${VITE_ORIGIN}"
+        ports:
+            - "${PORT}:${PORT}"
+        volumes:
+            - "./log:/usr/src/app/log"
